@@ -1,0 +1,22 @@
+VAR
+vect1: ARRAY_OF INTEGER;
+i,j,n: INTEGER;
+
+BEGIN
+FOR i FROM 1 TO n DO
+READ (vect1[i]);
+END_FOR
+
+FOR j FROM 1 TO vect1.length-1 DO
+ Key:=vect1[i];
+ i:=j-1;
+IF ( vect1[i]>Key) THEN
+  vect1[i+1]:=vect1[i];
+ ELSE
+  vect1[i+1]:=Key;
+END_IF
+END FOR
+FOR j FROM 1 TO A.length-1 DO
+WRITE (vect1[i]);
+END_FOR
+END
