@@ -16,7 +16,7 @@ IF ( vect1[i]>Key) THEN
   vect1[i+1]:=Key;
 END_IF
 END FOR
-FOR j FROM 1 TO A.length-1 DO
+FOR j FROM 1 TO vect1.length-1 DO
 WRITE (vect1[i]);
 END_FOR
 END
