@@ -12,6 +12,7 @@ FOR j FROM 1 TO vect1.length-1 DO
  i:=j-1;
 IF ( vect1[i]>Key) THEN
   vect1[i+1]:=vect1[i];
+  i=i-1
  ELSE
   vect1[i+1]:=Key;
 END_IF
